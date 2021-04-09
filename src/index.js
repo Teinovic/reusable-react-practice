@@ -55,7 +55,7 @@ const LoginForm = forwardRef((props, ref) => {
   
   useEffect(() => {
     ref.current.focus()
-  }, [])
+  }, [ref])
   
   return <>
     <input type="text" value={username} ref={ref} placeholder="Username" onChange={(e) => {
@@ -75,7 +75,7 @@ const SignupForm = forwardRef((props, ref) => {
   
   useEffect(() => {
     ref.current.focus()
-  }, [])
+  }, [ref])
   
   return <>
     <input type="email" value={email} ref={ref} placeholder="Email" onChange={(e) => {
